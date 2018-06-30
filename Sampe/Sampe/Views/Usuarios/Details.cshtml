@@ -1,0 +1,71 @@
+﻿@model Sampe.Usuario
+@{
+    ViewBag.Title = "Meu Perfil";
+}
+<script>
+    function ver() {
+
+        document.getElementById("p").innerHTML = @Model.Senha ;
+    }
+    function desver() {
+
+        document.getElementById("p").innerHTML = "Ver" ;
+    }
+
+</script>
+<h2><span class="glyphicon glyphicon-user "></span>  Meu Perfil</h2>
+<hr />
+<div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-6">
+        <div class="row">
+            <table class="table table-bordered table-responsive">
+                <tr>
+                    <th>
+                        Nome
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.NomeUsuario) @Html.DisplayFor(model => model.SobrenomeUsuario)
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Login
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.Login)
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Senha
+                    </th>
+                    <td>
+                        <a id="p" onclick="ver()" onmouseout="desver()">Ver</a>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Hierarquia)
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.Hierarquia)
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Cargo
+                    </th>
+                    <td>
+                        @Html.DisplayFor(model => model.Cargo.NomeCargo)
+                    </td>
+                </tr>
+
+
+            </table>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
