@@ -241,10 +241,10 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>06/26/2018 15:43:28</publishTime>
     </File>
     <File Include="bin/Sampe.dll">
-      <publishTime>07/06/2018 21:05:32</publishTime>
+      <publishTime>07/07/2018 11:37:20</publishTime>
     </File>
     <File Include="bin/Sampe.pdb">
-      <publishTime>07/06/2018 21:05:32</publishTime>
+      <publishTime>07/07/2018 11:37:20</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>06/26/2018 15:43:28</publishTime>
@@ -1225,16 +1225,16 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>06/26/2018 15:43:28</publishTime>
     </File>
     <File Include="Views/Relatorio/OpCopoData.cshtml">
-      <publishTime>07/06/2018 21:01:44</publishTime>
+      <publishTime>06/07/2018 21:01:44</publishTime>
     </File>
     <File Include="Views/Relatorio/OpKitData.cshtml">
       <publishTime>06/26/2018 15:43:28</publishTime>
     </File>
     <File Include="Views/Relatorio/OpPecaData.cshtml">
-      <publishTime>07/06/2018 21:01:44</publishTime>
+      <publishTime>06/07/2018 21:01:44</publishTime>
     </File>
     <File Include="Views/Relatorio/OpRefugoData.cshtml">
-      <publishTime>07/06/2018 21:01:44</publishTime>
+      <publishTime>06/07/2018 21:01:44</publishTime>
     </File>
     <File Include="Views/Relatorio/OsData.cshtml">
       <publishTime>06/26/2018 15:43:28</publishTime>
@@ -1315,7 +1315,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>06/26/2018 15:43:28</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/07/2018 11:07:05</publishTime>
+      <publishTime>07/04/2018 11:07:05</publishTime>
     </File>
   </ItemGroup>
 </Project>
