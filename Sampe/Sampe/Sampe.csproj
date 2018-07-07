@@ -397,7 +397,9 @@
     <Content Include="Scripts\Sampe.js" />
     <Content Include="Scripts\toastr.js" />
     <Content Include="Scripts\toastr.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -408,44 +410,32 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\FormularioOrdemServicoes\Create.cshtml" />
     <Content Include="Views\FormularioOrdemServicoes\Delete.cshtml" />
-    <Content Include="Views\FormularioOrdemServicoes\Details.cshtml" />
     <Content Include="Views\FormularioOrdemServicoes\Edit.cshtml" />
     <Content Include="Views\FormularioOrdemServicoes\Index.cshtml" />
-    <Content Include="Views\FormularioTrocaMoldes\Create.cshtml" />
     <Content Include="Views\FormularioTrocaMoldes\Delete.cshtml" />
-    <Content Include="Views\FormularioTrocaMoldes\Details.cshtml" />
     <Content Include="Views\FormularioTrocaMoldes\Edit.cshtml" />
     <Content Include="Views\FormularioTrocaMoldes\Index.cshtml" />
     <Content Include="Views\AtividadeOS\Create.cshtml" />
     <Content Include="Views\AtividadeOS\Delete.cshtml" />
-    <Content Include="Views\AtividadeOS\Details.cshtml" />
     <Content Include="Views\AtividadeOS\Edit.cshtml" />
     <Content Include="Views\AtividadeOS\Index.cshtml" />
     <Content Include="Views\AtividadeTMs\Create.cshtml" />
     <Content Include="Views\AtividadeTMs\Delete.cshtml" />
-    <Content Include="Views\AtividadeTMs\Details.cshtml" />
     <Content Include="Views\AtividadeTMs\Edit.cshtml" />
     <Content Include="Views\AtividadeTMs\Index.cshtml" />
     <Content Include="Views\Cargos\Create.cshtml" />
     <Content Include="Views\Cargos\Delete.cshtml" />
-    <Content Include="Views\Cargos\Details.cshtml" />
     <Content Include="Views\Cargos\Edit.cshtml" />
     <Content Include="Views\Cargos\Index.cshtml" />
     <Content Include="Views\FormularioOSAtividades\Create.cshtml" />
-    <Content Include="Views\FormularioOSAtividades\Delete.cshtml" />
-    <Content Include="Views\FormularioOSAtividades\Details.cshtml" />
     <Content Include="Views\FormularioOSAtividades\Edit.cshtml" />
     <Content Include="Views\FormularioOSAtividades\Index.cshtml" />
     <Content Include="Views\FormularioTMAtividades\Create.cshtml" />
-    <Content Include="Views\FormularioTMAtividades\Delete.cshtml" />
     <Content Include="Views\FormularioTMAtividades\Details.cshtml" />
-    <Content Include="Views\FormularioTMAtividades\Edit.cshtml" />
     <Content Include="Views\FormularioTMAtividades\Index.cshtml" />
     <Content Include="Views\Maquinas\Create.cshtml" />
     <Content Include="Views\Maquinas\Delete.cshtml" />
-    <Content Include="Views\Maquinas\Details.cshtml" />
     <Content Include="Views\Maquinas\Edit.cshtml" />
     <Content Include="Views\Maquinas\Index.cshtml" />
     <Content Include="Views\Moldes\Create.cshtml" />
@@ -460,31 +450,13 @@
     <Content Include="Views\Usuarios\Details.cshtml" />
     <Content Include="Views\Usuarios\Edit.cshtml" />
     <Content Include="Views\Usuarios\Index.cshtml" />
-    <Content Include="Views\Clientes\Create.cshtml" />
     <Content Include="Views\Clientes\Delete.cshtml" />
-    <Content Include="Views\Clientes\Details.cshtml" />
     <Content Include="Views\Clientes\Edit.cshtml" />
     <Content Include="Views\Clientes\Index.cshtml" />
-    <Content Include="Views\ControleDeQualidades\Create.cshtml" />
-    <Content Include="Views\ControleDeQualidades\Delete.cshtml" />
-    <Content Include="Views\ControleDeQualidades\Details.cshtml" />
-    <Content Include="Views\ControleDeQualidades\Edit.cshtml" />
-    <Content Include="Views\ControleDeQualidades\Index.cshtml" />
-    <Content Include="Views\Especificacoes\Create.cshtml" />
-    <Content Include="Views\Especificacoes\Delete.cshtml" />
-    <Content Include="Views\Especificacoes\Details.cshtml" />
-    <Content Include="Views\Especificacoes\Edit.cshtml" />
-    <Content Include="Views\Especificacoes\Index.cshtml" />
     <Content Include="Views\Expectativas\Create.cshtml" />
     <Content Include="Views\Expectativas\Delete.cshtml" />
-    <Content Include="Views\Expectativas\Details.cshtml" />
     <Content Include="Views\Expectativas\Edit.cshtml" />
     <Content Include="Views\Expectativas\Index.cshtml" />
-    <Content Include="Views\KitPecas\Create.cshtml" />
-    <Content Include="Views\KitPecas\Delete.cshtml" />
-    <Content Include="Views\KitPecas\Details.cshtml" />
-    <Content Include="Views\KitPecas\Edit.cshtml" />
-    <Content Include="Views\KitPecas\Index.cshtml" />
     <Content Include="Views\OrdemProducaoKits\Create.cshtml" />
     <Content Include="Views\OrdemProducaoKits\Delete.cshtml" />
     <Content Include="Views\OrdemProducaoKits\Details.cshtml" />
@@ -513,11 +485,6 @@
     <Content Include="Views\Relatorio\OpPecaData.cshtml" />
     <Content Include="Views\Relatorio\OsData.cshtml" />
     <Content Include="Views\Relatorio\TmData.cshtml" />
-    <Content Include="Views\EspecificacoesRefugo\Create.cshtml" />
-    <Content Include="Views\EspecificacoesRefugo\Delete.cshtml" />
-    <Content Include="Views\EspecificacoesRefugo\Details.cshtml" />
-    <Content Include="Views\EspecificacoesRefugo\Edit.cshtml" />
-    <Content Include="Views\EspecificacoesRefugo\Index.cshtml" />
     <Content Include="Views\ParadaRefugos\Create.cshtml" />
     <Content Include="Views\ParadaRefugos\Delete.cshtml" />
     <Content Include="Views\ParadaRefugos\Details.cshtml" />
@@ -530,21 +497,11 @@
     <Content Include="Views\Home\Cadastros.cshtml" />
     <Content Include="Views\OrdemProducaoPecas\Edit.cshtml" />
     <Content Include="Views\OrdemProducaoRefugos\Edit.cshtml" />
-    <Content Include="Views\ControleDeQualidadeCopos\Create.cshtml" />
-    <Content Include="Views\ControleDeQualidadeCopos\Delete.cshtml" />
-    <Content Include="Views\ControleDeQualidadeCopos\Details.cshtml" />
-    <Content Include="Views\ControleDeQualidadeCopos\Edit.cshtml" />
-    <Content Include="Views\ControleDeQualidadeCopos\Index.cshtml" />
     <Content Include="Views\Cores\Create.cshtml" />
     <Content Include="Views\Cores\Delete.cshtml" />
     <Content Include="Views\Cores\Details.cshtml" />
     <Content Include="Views\Cores\Edit.cshtml" />
     <Content Include="Views\Cores\Index.cshtml" />
-    <Content Include="Views\EspecificacoesCopo\Create.cshtml" />
-    <Content Include="Views\EspecificacoesCopo\Delete.cshtml" />
-    <Content Include="Views\EspecificacoesCopo\Details.cshtml" />
-    <Content Include="Views\EspecificacoesCopo\Edit.cshtml" />
-    <Content Include="Views\EspecificacoesCopo\Index.cshtml" />
     <Content Include="Views\OrdemProducaoCopos\Create.cshtml" />
     <Content Include="Views\OrdemProducaoCopos\Delete.cshtml" />
     <Content Include="Views\OrdemProducaoCopos\Details.cshtml" />
@@ -561,7 +518,6 @@
     <Content Include="Views\Relatorio\BuscaOpCopo.cshtml" />
     <Content Include="Views\Marcanti\Create.cshtml" />
     <Content Include="Views\Marcanti\Delete.cshtml" />
-    <Content Include="Views\Marcanti\Details.cshtml" />
     <Content Include="Views\Marcanti\Edit.cshtml" />
     <Content Include="Views\Marcanti\Index.cshtml" />
     <Content Include="Views\Relatorio\OpCopoData.cshtml" />
@@ -572,7 +528,6 @@
     <Content Include="Views\Relatorio\ExibeTm.cshtml" />
     <Content Include="Views\ExpedicaoCopos\Create.cshtml" />
     <Content Include="Views\ExpedicaoCopos\Delete.cshtml" />
-    <Content Include="Views\ExpedicaoCopos\Details.cshtml" />
     <Content Include="Views\ExpedicaoCopos\Edit.cshtml" />
     <Content Include="Views\ExpedicaoCopos\Index.cshtml" />
     <Content Include="Views\Vendas\Create.cshtml" />
@@ -592,7 +547,6 @@
     <Content Include="Views\VendasKit\Index.cshtml" />
     <Content Include="Views\ExpedicaoKits\Create.cshtml" />
     <Content Include="Views\ExpedicaoKits\Delete.cshtml" />
-    <Content Include="Views\ExpedicaoKits\Details.cshtml" />
     <Content Include="Views\ExpedicaoKits\Edit.cshtml" />
     <Content Include="Views\ExpedicaoKits\Index.cshtml" />
     <Content Include="Views\CorPecas\Create.cshtml" />
@@ -609,6 +563,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\ControleDeQualidadeCopos\" />
+    <Folder Include="Views\ControleDeQualidades\" />
+    <Folder Include="Views\EspecificacoesCopo\" />
+    <Folder Include="Views\EspecificacoesRefugo\" />
+    <Folder Include="Views\Especificacoes\" />
+    <Folder Include="Views\KitPecas\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

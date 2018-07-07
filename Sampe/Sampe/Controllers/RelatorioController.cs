@@ -115,8 +115,6 @@ namespace Sampe.Controllers
 		public ActionResult ExibeOpCopo(int? pagina, Boolean? gerarPdf, string id)
 		{
 			OrdemProducaoCopo ordemProducaoCopo = db.OrdemProducaoCopoes.Find(id);
-			db.Entry(ordemProducaoCopo).Reference(f => f.Maquina).Load();
-			db.Entry(ordemProducaoCopo).Reference(f => f.Expectativa).Load();
 			var busca = db.EspecificacaoCopoes.Where(o => o.OrdemProducaoCopoId == id).Include(o => o.Cor).ToArray();
 			var busca2 = db.ParadaCopoes.Where(o => o.OrdemProducaoCopoId == id).ToArray();
 			var busca3 = db.ControleDeQualidadeCopoes.Where(o => o.OrdemProducaoCopoId == id).Include(o => o.Usuario).ToArray();
@@ -614,6 +612,7 @@ namespace Sampe.Controllers
                     db.Entry(ordemProducaoPeca).Reference(f => f.Expectativa).Load();
                     db.Entry(ordemProducaoPeca).Reference(f => f.ControleDeQualidade).Load();
                     db.Entry(ordemProducaoPeca).Reference(f => f.Parada).Load();
+					db.Entry(ordemProducaoPeca).Reference(f => f.CorPeca).Load();
                 }
                 if (gerarPdf == true)
                 {

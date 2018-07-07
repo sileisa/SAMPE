@@ -4,7 +4,7 @@
     Layout = "~/Views/Relatorio/LayoutRelatorio.cshtml";
 }
 <div class="container">
-    <table>
+    <table class="table table-bordered">
         <tr>
             <th>
                 <div class="col-md-4 ">
@@ -33,7 +33,7 @@
                 Código
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Produto)
+                @Html.DisplayNameFor(model => model.Expectativa.Produto)
             </th>
             <th>
                 Cor
@@ -56,32 +56,33 @@
         </tr>
         @foreach (var item in Model)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CodigoIdentificador)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Produto)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ProdutoCor)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Data)
-                </td>
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.CodigoIdentificador)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Expectativa.Produto)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.CorPeca.NomeCorPeca)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.UnidadesProduzidas)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.MateriaPrima)
+			</td>
 
-                <td>
-                    @Html.DisplayFor(modelItem => item.Maquina)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.UnidadesProduzidas)
-                </td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Maquina.NomeMaquina)
+			</td>
+			<td>
+				@item.Data.ToString("dd/MM/yyyy")
+			</td>
 
 
 
-
-
-            </tr>
+		</tr>
         }
     </table>
 </div>

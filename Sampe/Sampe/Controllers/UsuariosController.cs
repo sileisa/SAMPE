@@ -125,7 +125,7 @@ namespace Sampe.Controllers
                 }
                 else if (usuario.Hierarquia == "Acesso Produção")
                 {
-                    if (c.NomeCargo != "Operador de Produção" || c.NomeCargo != "Estagiário de Produção")
+                    if (c.NomeCargo != "Operador de Produção" && c.NomeCargo != "Estagiário de Produção")
                     {
                         ModelState.AddModelError("Hierarquia", "Hierarquia não permitida para este cargo");
                     }

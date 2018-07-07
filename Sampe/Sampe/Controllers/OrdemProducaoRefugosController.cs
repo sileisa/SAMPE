@@ -54,6 +54,7 @@ namespace Sampe.Controllers
 		[ValidateAntiForgeryToken]
 		public ActionResult Create([Bind(Include = "OrdemProducaoRefugoId,Produto,Data,UsuarioId,ProdIncio,ProdFim,Obs")] OrdemProducaoRefugo ordemProducaoRefugo, bool Status)
 		{
+			ordemProducaoRefugo.Status = Status;
 			var a = Request.Form["Material"];
 			var b = Request.Form["Cor"];
 
@@ -171,8 +172,9 @@ namespace Sampe.Controllers
 		// obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Edit([Bind(Include = "OrdemProducaoRefugoId,Produto,Data,UsuarioId,ProdIncio,ProdFim,Obs")] OrdemProducaoRefugo ordemProducaoRefugo)
+		public ActionResult Edit([Bind(Include = "OrdemProducaoRefugoId,Produto,Data,UsuarioId,ProdIncio,ProdFim,Obs")] OrdemProducaoRefugo ordemProducaoRefugo, bool Status)
 		{
+			ordemProducaoRefugo.Status = Status;
 			var a = Request.Form["Material"];
 			var b = Request.Form["Cor"];
 
